@@ -1,9 +1,10 @@
 const express = require("express")
 const http = require("http")
+const path = require("path")
 const app = express()
 const server = http.createServer(app)
 
-const __dirname = path.resolve();
+
 app.use(express.static(path.join(__dirname, '/frontend/build')))
 
 

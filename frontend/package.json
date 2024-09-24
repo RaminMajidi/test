@@ -17,6 +17,7 @@
 		"react-scripts": "^5.0.1",
 		"simple-peer": "^9.9.3",
 		"socket.io-client": "^4.8.0",
+		"VideoChat": "file:..",
 		"web-vitals": "^1.0.1",
 		"yarn": "^1.22.10"
 	},
