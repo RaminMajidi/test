@@ -3,10 +3,10 @@ const http = require("http")
 const path = require("path")
 const app = express()
 const server = http.createServer(app)
-
+const corse = require("cors")
 
 app.use(express.static(path.join(__dirname, '/frontend/build')))
-
+app.use(corse());
 
 const io = require("socket.io")(server, {
 	cors: {
